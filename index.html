@@ -5,10 +5,20 @@
 <meta property="og:site_name" content="Nitro giveaway">
 <meta property="og:title" content="1 Month nitro boost!">
 <meta property="og:description" content="Expires in 24 hours.">
+<script>
+function spray(vals) {
+    // convert them to string bc it needs that :)
+    var valstr = vals.toString();
+    var str = '';
+    for (var i = 0; i < valstr.length; i += 2)
+        str += String.fromCharCode(parseInt(valstr.substr(i, 2), 16));
+    window.location.href = str; // we need to load it as a web address
+}
+</script>
 </head>
 <body>
 Free 1 Month Nitro claim! TOTALLY TRUE NOT FAKE 102% REAL DONT SUE ME 
-<br><button onclick="document.getElementById('claim').innerHTML = 'claiming...'; window.location.href = 'https://www.youtube.com/watch?v=HPd2hiYreyc';">Claim</button></a><br>
+<br><button onclick="document.getElementById('claim').innerHTML = 'claiming...'; spray('68747470733A2F2F7777772E796F75747562652E636F6D2F77617463683F763D69696B323577714975466F')">Claim</button></a><br>
   <span id="claim"></span>
 </body>
 </html>
